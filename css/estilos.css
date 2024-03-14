@@ -59,16 +59,21 @@ a {
 
 /* BOTONES */
 
-button {
+.boton {
     font-family: "Futura PT Bold";
-    font-size: 14px;
+    font-size: 16px;
     color: #3C3734;
     background-color: #F7EDDC;
     padding: 14px 32px;
     border-radius: 50px;
-    border: none;
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
 }
 
+.boton:hover {
+ opacity: 0.9;
+  }
 
 
 /* HEADER */
@@ -81,12 +86,11 @@ header {
     display: flex;
     flex: row;
     justify-content: space-between;
-
 }
 
 .info__evelia {
     font-family: "Bodoni 72";
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 12px;
     color: #F7EDDC;
     text-transform: uppercase;
@@ -97,6 +101,10 @@ header {
 
 .info__evelia p {
     margin: 0px;
+}
+
+.hover__menu:hover {
+    opacity: 0.9;
 }
 
 
@@ -124,12 +132,16 @@ header {
 
 footer {
     font-family: "Futura PT Book";
-    font-size: 12px;
+    font-size: 14px;
     color: #3C3734;
 }
 
+footer a:hover {
+    opacity: 0.7;
+}
+
 .footer__mobile {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: auto;
 }
 
@@ -206,7 +218,7 @@ footer {
 
 .info__evelia__menu {
     font-family: "Bodoni 72";
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 12px;
     color: #3C3734;
     text-transform: uppercase;
@@ -235,14 +247,23 @@ footer {
 
 .main__menu__bloque__p {
     font-family: "Futura PT Bold";
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 6px;
 }
 
 .main__menu__bloque__mail {
     font-family: "Bodoni 72";
-    font-size: 14px;
+    font-size: 16px;
 }
+
+.main__menu__bloque__p:hover {
+    opacity: 0.7;
+}
+
+.main__menu__bloque__mail:hover {
+    opacity: 0.7;
+}
+
 
 .main__menu__imagenes {
     display: flex;
@@ -282,9 +303,9 @@ picture {
 
     /* BOTONES */
 
-    button {
+    .boton {
         font-family: "Futura PT Bold";
-        font-size: 24px;
+        font-size: 22px;
         background-color: #F7EDDC;
         padding: 10px 36px;
         border-radius: 50px;
@@ -307,7 +328,7 @@ picture {
     .info__evelia {
         margin-top: 0px;
         margin-right: 10px;
-        font-size: 22px;
+        font-size: 20px;
         padding: 6px 18px;
     }
 
@@ -327,7 +348,7 @@ picture {
 
     .footer___Desktop {
         display: flex;
-        font-size: 20px;
+        font-size: 18px;
         flex-direction: row;
         justify-content: space-between;
         margin: 6px 140px;
@@ -357,7 +378,7 @@ picture {
     .info__evelia__menu {
         margin-top: 0px;
         margin-right: 10px;
-        font-size: 22px;
+        font-size: 20px;
         padding: 6px 18px;
     }
 
@@ -370,17 +391,17 @@ picture {
     }
 
     .main__menu__bloque__p {
-        font-size: 24px;
+        font-size: 22px;
         margin-right: 6px;
     }
 
     .main__menu__bloque__mail {
-        font-size: 24px;
+        font-size: 22px;
     }
 
 
     .main__menu__imagenes {
-        margin:-20% 0px 30px 0px;
+        margin: -20% 0px 30px 0px;
     }
 
     .footer___Desktop__menu {
