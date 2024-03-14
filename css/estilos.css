@@ -263,7 +263,7 @@ picture {
 
 /* ------ DESKTOP ------ */
 
-@media (min-width: 900px) {
+@media (min-width: 1080px) {
 
     .body__home {
         background-image: url("../assets/img/home/img-home-desktop.png");
