@@ -248,19 +248,18 @@ footer a:hover {
 .main__menu__bloque__p {
     font-family: "Futura PT Bold";
     font-size: 16px;
+    margin: 0px;
     margin-right: 6px;
+    
 }
 
 .main__menu__bloque__mail {
     font-family: "Bodoni 72";
     font-size: 16px;
+    margin: 0px;
 }
 
-.main__menu__bloque__p:hover {
-    opacity: 0.7;
-}
-
-.main__menu__bloque__mail:hover {
+.main__menu__bloque:hover {
     opacity: 0.7;
 }
 
