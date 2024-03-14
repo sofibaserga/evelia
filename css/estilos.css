@@ -52,6 +52,7 @@ a {
     background-image: url("../assets/img/home/img-home-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #ECCDB7;
     margin: 0px;
 }
@@ -64,7 +65,7 @@ a {
     font-size: 16px;
     color: #3C3734;
     background-color: #F7EDDC;
-    padding: 14px 32px;
+    padding: 12px 32px;
     border-radius: 50px;
     display: block;
     box-sizing: border-box;
@@ -72,8 +73,8 @@ a {
 }
 
 .boton:hover {
- opacity: 0.9;
-  }
+    opacity: 0.9;
+}
 
 
 /* HEADER */
@@ -90,7 +91,7 @@ header {
 
 .info__evelia {
     font-family: "Bodoni 72";
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 12px;
     color: #F7EDDC;
     text-transform: uppercase;
@@ -117,7 +118,7 @@ header {
 }
 
 .logoGeneral {
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     margin-top: auto;
 }
 
@@ -151,7 +152,7 @@ footer a:hover {
     flex: row;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 20px;
+    padding: 1px 20px;
 }
 
 .footer__parte1__spice {
@@ -171,7 +172,7 @@ footer a:hover {
     flex: row;
     align-items: center;
     justify-content: space-between;
-    padding: 4px 20px;
+    padding: 1px 20px;
 }
 
 .footer__parte2__spice {
@@ -218,7 +219,7 @@ footer a:hover {
 
 .info__evelia__menu {
     font-family: "Bodoni 72";
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 12px;
     color: #3C3734;
     text-transform: uppercase;
@@ -250,7 +251,7 @@ footer a:hover {
     font-size: 16px;
     margin: 0px;
     margin-right: 6px;
-    
+
 }
 
 .main__menu__bloque__mail {
@@ -281,9 +282,66 @@ picture {
 
 
 
+/* ------ IPAD ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .body__home {
+        background-image: url("../assets/img/home/img-home-ipad.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0px;
+        background-color: #ECCDB7;
+    }
+
+    .body__menu {
+        background-image: url("../assets/img/menu/img-menu-ipad.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0px;
+    }
+
+
+    .content__menu {
+        justify-content: space-between;
+    }
+
+
+    /* HEADER */
+
+
+    .info__evelia {
+
+        font-size: 20px;
+    }
+
+
+
+    /* MAIN */
+
+    .main__menu__bloque {
+        padding-bottom: 60px;
+    }
+
+    .main__menu__bloque__p {
+        font-size: 20px;
+        margin-right: 6px;
+    }
+
+    .main__menu__bloque__mail {
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+
+
+
 /* ------ DESKTOP ------ */
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 
     .body__home {
         background-image: url("../assets/img/home/img-home-desktop.png");
@@ -300,17 +358,17 @@ picture {
         margin: 0px;
     }
 
+
     /* BOTONES */
 
     .boton {
         font-family: "Futura PT Bold";
-        font-size: 22px;
+        font-size: 18px;
         background-color: #F7EDDC;
         padding: 10px 36px;
         border-radius: 50px;
         border: none;
     }
-
 
     /* HEADER */
 
@@ -327,15 +385,8 @@ picture {
     .info__evelia {
         margin-top: 0px;
         margin-right: 10px;
-        font-size: 20px;
+        font-size: 17px;
         padding: 6px 18px;
-    }
-
-
-    /* MAIN */
-
-    .logoGeneral {
-        margin-bottom: 15%;
     }
 
 
@@ -347,7 +398,7 @@ picture {
 
     .footer___Desktop {
         display: flex;
-        font-size: 18px;
+        font-size: 16px;
         flex-direction: row;
         justify-content: space-between;
         margin: 6px 140px;
@@ -377,7 +428,7 @@ picture {
     .info__evelia__menu {
         margin-top: 0px;
         margin-right: 10px;
-        font-size: 20px;
+        font-size: 17px;
         padding: 6px 18px;
     }
 
@@ -390,12 +441,12 @@ picture {
     }
 
     .main__menu__bloque__p {
-        font-size: 22px;
+        font-size: 18px;
         margin-right: 6px;
     }
 
     .main__menu__bloque__mail {
-        font-size: 22px;
+        font-size: 18px;
     }
 
 
