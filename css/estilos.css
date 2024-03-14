@@ -1,0 +1,393 @@
+/* FONTS */
+
+@font-face {
+    font-family: "Bodoni 72";
+    src:
+        url("../assets/fonts/Bodoni72.ttc") format('TrueType');
+}
+
+@font-face {
+    font-family: "Futura PT Bold";
+    src:
+        url("../assets/fonts/FuturaPTBold.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: "Futura PT Book";
+    src:
+        url("../assets/fonts/FuturaPTBook.otf") format('OpenType');
+}
+
+
+
+/* ------ MOBILE ------ */
+
+/* GENERAL */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.body__home {
+    background-image: url("../assets/img/home/img-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ECCDB7;
+    margin: 0px;
+}
+
+
+/* BOTONES */
+
+button {
+    font-family: "Futura PT Bold";
+    font-size: 14px;
+    color: #3C3734;
+    background-color: #F7EDDC;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+/* HEADER */
+
+header {
+    margin: 40px 20px;
+}
+
+.header__home {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+
+}
+
+.info__evelia {
+    font-family: "Bodoni 72";
+    font-size: 12px;
+    margin-top: 12px;
+    color: #F7EDDC;
+    text-transform: uppercase;
+    background-color: #68969ed8;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.info__evelia p {
+    margin: 0px;
+}
+
+
+
+/* MAIN */
+
+.main__home {
+    display: flex;
+    justify-content: center;
+}
+
+.logoGeneral {
+    margin-bottom: 20%;
+    margin-top: auto;
+}
+
+.imagen-abuela-mobile {
+    width: 80%;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    font-family: "Futura PT Book";
+    font-size: 12px;
+    color: #3C3734;
+}
+
+.footer__mobile {
+    font-size: 12px;
+    margin-top: auto;
+}
+
+.footer__parte1 {
+    background-color: #E8C5AD;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 20px;
+}
+
+.footer__parte1__spice {
+    display: flex;
+    flex: row;
+}
+
+.footer__parte1__spice img {
+    margin-right: 4px;
+}
+
+
+
+.footer__parte2 {
+    background-color: #C1A18B;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 20px;
+}
+
+.footer__parte2__spice {
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+.footer__parte2__spice p {
+    margin-right: 4px;
+}
+
+.link__spice {
+    text-decoration: underline;
+}
+
+.footer___Desktop {
+    display: none;
+}
+
+
+
+/* ------------ PAGINA MENU ------------ */
+
+/* GENERAL */
+
+.content__menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.body__menu {
+    background-image: url("../assets/img/menu/img-menu-mobile2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-color: #ECCDB7;
+}
+
+
+
+/* HEADER */
+
+.info__evelia__menu {
+    font-family: "Bodoni 72";
+    font-size: 12px;
+    margin-top: 12px;
+    color: #3C3734;
+    text-transform: uppercase;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.info__evelia__menu p {
+    margin: 0px;
+}
+
+
+
+/* MAIN */
+
+.main__menu {
+    margin: 0px 20px;
+}
+
+.main__menu__bloque {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__menu__bloque__p {
+    font-family: "Futura PT Bold";
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.main__menu__bloque__mail {
+    font-family: "Bodoni 72";
+    font-size: 14px;
+}
+
+.main__menu__imagenes {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+picture {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+/* ------ DESKTOP ------ */
+
+@media (min-width: 900px) {
+
+    .body__home {
+        background-image: url("../assets/img/home/img-home-desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #ECCDB7;
+        margin: 0px;
+    }
+
+    .body__menu {
+        background-image: url("../assets/img/menu/img-menu-desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0px;
+    }
+
+    /* BOTONES */
+
+    button {
+        font-family: "Futura PT Bold";
+        font-size: 24px;
+        background-color: #F7EDDC;
+        padding: 10px 36px;
+        border-radius: 50px;
+        border: none;
+    }
+
+
+    /* HEADER */
+
+    header {
+        margin: 60px 122px;
+    }
+
+    .header__home__descripcion {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .info__evelia {
+        margin-top: 0px;
+        margin-right: 10px;
+        font-size: 22px;
+        padding: 6px 18px;
+    }
+
+
+    /* MAIN */
+
+    .logoGeneral {
+        margin-bottom: 15%;
+    }
+
+
+    /* FOOTER */
+
+    .footer___Mobile {
+        display: none;
+    }
+
+    .footer___Desktop {
+        display: flex;
+        font-size: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 6px 140px;
+    }
+
+
+
+
+
+    /* ------------ PAGINA MENU ------------ */
+
+    /* GENERAL */
+
+    .main__menu {
+        margin: 60px 140px;
+    }
+
+
+    /* HEADER */
+
+    .header__menu__descripcion {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .info__evelia__menu {
+        margin-top: 0px;
+        margin-right: 10px;
+        font-size: 22px;
+        padding: 6px 18px;
+    }
+
+
+
+    /* MAIN */
+
+    .main__menu__bloque {
+        padding-bottom: 30px;
+    }
+
+    .main__menu__bloque__p {
+        font-size: 24px;
+        margin-right: 6px;
+    }
+
+    .main__menu__bloque__mail {
+        font-size: 24px;
+    }
+
+
+    .main__menu__imagenes {
+        margin:-5% 0px 30px 0px;
+    }
+
+    .footer___Desktop__menu {
+        background-color: #E8C5AD;
+    }
+
+
+
+
+}
