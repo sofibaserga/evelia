@@ -352,6 +352,9 @@ footer a:hover {
   .info__evelia__menu__mobile {
     font-size: 20px;
   }
+  .header__home__parte2 {
+    font-size: 18px;
+  }
 }
 /* ------ DESKTOP ------ */
 @media only screen and (min-width: 1025px) {
