@@ -1,0 +1,43 @@
+
+
+.boton {
+    font-family: "Futura PT Bold";
+    font-size: 16px;
+    color: #3C3734;
+    background-color: #F7EDDC;
+    padding: 12px 32px;
+    border-radius: 50px;
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+
+/* ------ IPAD ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .boton{
+        font-size: 18px;
+    }
+    
+}
+
+/* ------ DESKTOP ------ */
+
+@media only screen and (min-width: 1025px) {
+
+    .boton {
+        font-family: "Futura PT Bold";
+        font-size: 18px;
+        background-color: #F7EDDC;
+        padding: 10px 36px;
+        border-radius: 50px;
+        border: none;
+    }
+
+}

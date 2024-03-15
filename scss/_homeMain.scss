@@ -1,0 +1,33 @@
+.main__home {
+    display: flex;
+    justify-content: center;
+}
+
+.logoGeneral {
+    margin-bottom: 15%;
+    margin-top: auto;
+}
+
+.imagen-abuela-mobile {
+    width: 80%;
+}
+
+
+/* ------ IPAD ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .main__menu__bloque {
+        padding-bottom: 60px;
+    }
+
+    .main__menu__bloque__p {
+        font-size: 20px;
+        margin-right: 6px;
+    }
+
+    .main__menu__bloque__mail {
+        font-size: 20px;
+    }
+
+}

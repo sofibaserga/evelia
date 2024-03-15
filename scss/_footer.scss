@@ -1,0 +1,93 @@
+
+
+footer {
+    font-family: "Futura PT Book";
+    font-size: 14px;
+    color: #3C3734;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+.footer__mobile {
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footer__parte1 {
+    background-color: #E8C5AD;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 20px;
+}
+
+.footer__parte1__spice {
+    display: flex;
+    flex: row;
+}
+
+.footer__parte1__spice img {
+    margin-right: 4px;
+}
+
+
+
+.footer__parte2 {
+    background-color: #C1A18B;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 20px;
+}
+
+.footer__parte2__spice {
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+.footer__parte2__spice p {
+    margin-right: 4px;
+}
+
+.link__spice {
+    text-decoration: underline;
+}
+
+.footer___Desktop {
+    display: none;
+}
+
+
+/* ------ IPAD ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .footer___Desktop{
+        font-size: 16px;
+    }
+    
+}
+
+
+/* ------ DESKTOP ------ */
+
+@media only screen and (min-width: 1025px) {
+
+    .footer___Mobile {
+        display: none;
+    }
+
+    .footer___Desktop {
+        display: flex;
+        font-size: 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 6px 140px;
+    }
+
+}

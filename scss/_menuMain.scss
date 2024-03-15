@@ -1,0 +1,92 @@
+
+
+.main__menu {
+    margin: 0px 20px;
+}
+
+.main__menu__bloque {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main__menu__bloque__p {
+    font-family: "Futura PT Bold";
+    font-size: 16px;
+    margin: 0px;
+    margin-right: 6px;
+
+}
+
+.main__menu__bloque__mail {
+    font-family: "Bodoni 72";
+    font-size: 16px;
+    margin: 0px;
+}
+
+.main__menu__bloque:hover {
+    opacity: 0.7;
+}
+
+
+.main__menu__imagenes {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+picture {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* ------ IPAD ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .main__menu__bloque__p {
+        font-size: 18px;
+        margin-right: 6px;
+    }
+
+    .main__menu__bloque__mail {
+        font-size: 18px;
+    }
+}
+
+/* ------ DESKTOP ------ */
+
+@media only screen and (min-width: 1025px) {
+
+    .main__menu {
+        margin: 60px 140px;
+    }
+
+    .main__menu__bloque {
+        padding-bottom: 30px;
+    }
+
+    .main__menu__bloque__p {
+        font-size: 18px;
+        margin-right: 6px;
+    }
+
+    .main__menu__bloque__mail {
+        font-size: 18px;
+    }
+
+
+    .main__menu__imagenes {
+        margin: -20% 0px 30px 0px;
+    }
+
+    .footer___Desktop__menu {
+        background-color: #E8C5AD;
+    }
+
+
+}

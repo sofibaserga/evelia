@@ -1,0 +1,46 @@
+
+
+.info__evelia__menu {
+    font-family: "Bodoni 72";
+    font-size: 15px;
+    margin-top: 12px;
+    color: #3C3734;
+    text-transform: uppercase;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.info__evelia__menu p {
+    margin: 0px;
+}
+
+
+/* ------ IPAD ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .info__evelia__menu {
+        font-size: 20px;
+    }
+
+}
+
+
+/* ------ DESKTOP ------ */
+
+@media only screen and (min-width: 1025px) {
+
+    .header__menu__descripcion {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .info__evelia__menu {
+        margin-top: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+        padding: 6px 18px;
+    }
+
+}

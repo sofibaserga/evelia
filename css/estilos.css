@@ -1,464 +1,399 @@
-/* FONTS */
-
 @font-face {
-    font-family: "Bodoni 72";
-    src:
-        url("../assets/fonts/Bodoni72.ttc") format('TrueType');
+  font-family: "Bodoni 72";
+  src: url("../assets/fonts/Bodoni72.ttc") format("TrueType");
 }
-
 @font-face {
-    font-family: "Futura PT Bold";
-    src:
-        url("../assets/fonts/FuturaPTBold.otf") format('OpenType');
+  font-family: "Futura PT Bold";
+  src: url("../assets/fonts/FuturaPTBold.otf") format("OpenType");
 }
-
 @font-face {
-    font-family: "Futura PT Book";
-    src:
-        url("../assets/fonts/FuturaPTBook.otf") format('OpenType');
+  font-family: "Futura PT Book";
+  src: url("../assets/fonts/FuturaPTBook.otf") format("OpenType");
 }
-
-
-
-/* ------ MOBILE ------ */
-
-/* GENERAL */
-
 html,
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.body__home {
-    background-image: url("../assets/img/home/img-home-mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ECCDB7;
-    margin: 0px;
-}
-
-
-/* BOTONES */
 
 .boton {
-    font-family: "Futura PT Bold";
-    font-size: 16px;
-    color: #3C3734;
-    background-color: #F7EDDC;
-    padding: 12px 32px;
-    border-radius: 50px;
-    display: block;
-    box-sizing: border-box;
-    width: fit-content;
+  font-family: "Futura PT Bold";
+  font-size: 16px;
+  color: #3C3734;
+  background-color: #F7EDDC;
+  padding: 12px 32px;
+  border-radius: 50px;
+  display: block;
+  box-sizing: border-box;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .boton:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
-
-/* HEADER */
-
-header {
-    margin: 40px 20px;
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .boton {
+    font-size: 18px;
+  }
 }
-
-.header__home {
-    display: flex;
-    flex: row;
-    justify-content: space-between;
-}
-
-.info__evelia {
-    font-family: "Bodoni 72";
-    font-size: 15px;
-    margin-top: 12px;
-    color: #F7EDDC;
-    text-transform: uppercase;
-    background-color: #68969ed8;
-    padding: 6px;
+/* ------ DESKTOP ------ */
+@media only screen and (min-width: 1025px) {
+  .boton {
+    font-family: "Futura PT Bold";
+    font-size: 18px;
+    background-color: #F7EDDC;
+    padding: 10px 36px;
     border-radius: 50px;
+    border: none;
+  }
+}
+.body__home {
+  background-image: url("../assets/img/home/img-home-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ECCDB7;
+  margin: 0px;
 }
 
-.info__evelia p {
-    margin: 0px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.hover__menu:hover {
-    opacity: 0.9;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
-
-/* MAIN */
-
-.main__home {
-    display: flex;
-    justify-content: center;
-}
-
-.logoGeneral {
-    margin-bottom: 15%;
-    margin-top: auto;
-}
-
-.imagen-abuela-mobile {
-    width: 80%;
-}
-
-
-
-
-/* FOOTER */
-
-footer {
-    font-family: "Futura PT Book";
-    font-size: 14px;
-    color: #3C3734;
-}
-
-footer a:hover {
-    opacity: 0.7;
-}
-
-.footer__mobile {
-    font-size: 14px;
-    margin-top: auto;
-}
-
-.footer__parte1 {
-    background-color: #E8C5AD;
-    display: flex;
-    flex: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1px 20px;
-}
-
-.footer__parte1__spice {
-    display: flex;
-    flex: row;
-}
-
-.footer__parte1__spice img {
-    margin-right: 4px;
-}
-
-
-
-.footer__parte2 {
-    background-color: #C1A18B;
-    display: flex;
-    flex: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1px 20px;
-}
-
-.footer__parte2__spice {
-    display: flex;
-    flex: row;
-    align-items: center;
-}
-
-.footer__parte2__spice p {
-    margin-right: 4px;
-}
-
-.link__spice {
-    text-decoration: underline;
-}
-
-.footer___Desktop {
-    display: none;
-}
-
-
-
-/* ------------ PAGINA MENU ------------ */
-
-/* GENERAL */
-
-.content__menu {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.body__menu {
-    background-image: url("../assets/img/menu/img-menu-mobile2.jpg");
-    background-size: contain;
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .body__home {
+    background-image: url("../assets/img/home/img-home-ipad.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
     background-color: #ECCDB7;
+  }
+}
+/* ------ DESKTOP ------ */
+@media only screen and (min-width: 1025px) {
+  .body__home {
+    background-image: url("../assets/img/home/img-home-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ECCDB7;
+    margin: 0px;
+  }
+}
+header {
+  margin: 40px 20px;
 }
 
+.header__home {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
 
+.info__evelia {
+  font-family: "Bodoni 72";
+  font-size: 15px;
+  margin-top: 12px;
+  color: #F7EDDC;
+  text-transform: uppercase;
+  background-color: rgba(104, 150, 158, 0.8470588235);
+  padding: 6px;
+  border-radius: 50px;
+}
 
-/* HEADER */
+.info__evelia p {
+  margin: 0px;
+}
 
+.hover__menu:hover {
+  opacity: 0.9;
+}
+
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .info__evelia {
+    font-size: 20px;
+  }
+}
+/* ------ DESKTOP ------ */
+@media only screen and (min-width: 1025px) {
+  header {
+    margin: 60px 122px;
+  }
+  .header__home__descripcion {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .info__evelia {
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 17px;
+    padding: 6px 18px;
+  }
+}
+.main__home {
+  display: flex;
+  justify-content: center;
+}
+
+.logoGeneral {
+  margin-bottom: 15%;
+  margin-top: auto;
+}
+
+.imagen-abuela-mobile {
+  width: 80%;
+}
+
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main__menu__bloque {
+    padding-bottom: 60px;
+  }
+  .main__menu__bloque__p {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  .main__menu__bloque__mail {
+    font-size: 20px;
+  }
+}
+footer {
+  font-family: "Futura PT Book";
+  font-size: 14px;
+  color: #3C3734;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+.footer__mobile {
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.footer__parte1 {
+  background-color: #E8C5AD;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 20px;
+}
+
+.footer__parte1__spice {
+  display: flex;
+  flex: row;
+}
+
+.footer__parte1__spice img {
+  margin-right: 4px;
+}
+
+.footer__parte2 {
+  background-color: #C1A18B;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 20px;
+}
+
+.footer__parte2__spice {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.footer__parte2__spice p {
+  margin-right: 4px;
+}
+
+.link__spice {
+  text-decoration: underline;
+}
+
+.footer___Desktop {
+  display: none;
+}
+
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer___Desktop {
+    font-size: 16px;
+  }
+}
+/* ------ DESKTOP ------ */
+@media only screen and (min-width: 1025px) {
+  .footer___Mobile {
+    display: none;
+  }
+  .footer___Desktop {
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6px 140px;
+  }
+}
+.body__menu {
+  background-image: url("../assets/img/menu/img-menu-mobile2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0px;
+  background-color: #ECCDB7;
+}
+
+.content__menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .body__menu {
+    background-image: url("../assets/img/menu/img-menu-ipad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+  }
+  .content__menu {
+    justify-content: space-between;
+  }
+}
+/* ------ DESKTOP ------ */
+@media only screen and (min-width: 1025px) {
+  .body__menu {
+    background-image: url("../assets/img/menu/img-menu-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+  }
+}
 .info__evelia__menu {
-    font-family: "Bodoni 72";
-    font-size: 15px;
-    margin-top: 12px;
-    color: #3C3734;
-    text-transform: uppercase;
-    padding: 6px;
-    border-radius: 50px;
+  font-family: "Bodoni 72";
+  font-size: 15px;
+  margin-top: 12px;
+  color: #3C3734;
+  text-transform: uppercase;
+  padding: 6px;
+  border-radius: 50px;
 }
 
 .info__evelia__menu p {
-    margin: 0px;
+  margin: 0px;
 }
 
-
-
-/* MAIN */
-
+/* ------ IPAD ------ */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .info__evelia__menu {
+    font-size: 20px;
+  }
+}
+/* ------ DESKTOP ------ */
+@media only screen and (min-width: 1025px) {
+  .header__menu__descripcion {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .info__evelia__menu {
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 17px;
+    padding: 6px 18px;
+  }
+}
 .main__menu {
-    margin: 0px 20px;
+  margin: 0px 20px;
 }
 
 .main__menu__bloque {
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .main__menu__bloque__p {
-    font-family: "Futura PT Bold";
-    font-size: 16px;
-    margin: 0px;
-    margin-right: 6px;
-
+  font-family: "Futura PT Bold";
+  font-size: 16px;
+  margin: 0px;
+  margin-right: 6px;
 }
 
 .main__menu__bloque__mail {
-    font-family: "Bodoni 72";
-    font-size: 16px;
-    margin: 0px;
+  font-family: "Bodoni 72";
+  font-size: 16px;
+  margin: 0px;
 }
 
 .main__menu__bloque:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-
 .main__menu__imagenes {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 30px 0px;
 }
 
 picture {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: flex-end;
 }
-
-
-
-
 
 /* ------ IPAD ------ */
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .body__home {
-        background-image: url("../assets/img/home/img-home-ipad.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0px;
-        background-color: #ECCDB7;
-    }
-
-    .body__menu {
-        background-image: url("../assets/img/menu/img-menu-ipad.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0px;
-    }
-
-
-    .content__menu {
-        justify-content: space-between;
-    }
-
-
-    /* HEADER */
-
-
-    .info__evelia {
-
-        font-size: 20px;
-    }
-
-
-
-    /* MAIN */
-
-    .main__menu__bloque {
-        padding-bottom: 60px;
-    }
-
-    .main__menu__bloque__p {
-        font-size: 20px;
-        margin-right: 6px;
-    }
-
-    .main__menu__bloque__mail {
-        font-size: 20px;
-    }
-
-
-
+  .main__menu__bloque__p {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  .main__menu__bloque__mail {
+    font-size: 18px;
+  }
 }
-
-
-
-
-
 /* ------ DESKTOP ------ */
-
 @media only screen and (min-width: 1025px) {
-
-    .body__home {
-        background-image: url("../assets/img/home/img-home-desktop.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #ECCDB7;
-        margin: 0px;
-    }
-
-    .body__menu {
-        background-image: url("../assets/img/menu/img-menu-desktop.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0px;
-    }
-
-
-    /* BOTONES */
-
-    .boton {
-        font-family: "Futura PT Bold";
-        font-size: 18px;
-        background-color: #F7EDDC;
-        padding: 10px 36px;
-        border-radius: 50px;
-        border: none;
-    }
-
-    /* HEADER */
-
-    header {
-        margin: 60px 122px;
-    }
-
-    .header__home__descripcion {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .info__evelia {
-        margin-top: 0px;
-        margin-right: 10px;
-        font-size: 17px;
-        padding: 6px 18px;
-    }
-
-
-    /* FOOTER */
-
-    .footer___Mobile {
-        display: none;
-    }
-
-    .footer___Desktop {
-        display: flex;
-        font-size: 16px;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 6px 140px;
-    }
-
-
-
-
-
-    /* ------------ PAGINA MENU ------------ */
-
-    /* GENERAL */
-
-    .main__menu {
-        margin: 60px 140px;
-    }
-
-
-    /* HEADER */
-
-    .header__menu__descripcion {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .info__evelia__menu {
-        margin-top: 0px;
-        margin-right: 10px;
-        font-size: 17px;
-        padding: 6px 18px;
-    }
-
-
-
-    /* MAIN */
-
-    .main__menu__bloque {
-        padding-bottom: 30px;
-    }
-
-    .main__menu__bloque__p {
-        font-size: 18px;
-        margin-right: 6px;
-    }
-
-    .main__menu__bloque__mail {
-        font-size: 18px;
-    }
-
-
-    .main__menu__imagenes {
-        margin: -20% 0px 30px 0px;
-    }
-
-    .footer___Desktop__menu {
-        background-color: #E8C5AD;
-    }
-
-
-
-
-}
+  .main__menu {
+    margin: 60px 140px;
+  }
+  .main__menu__bloque {
+    padding-bottom: 30px;
+  }
+  .main__menu__bloque__p {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  .main__menu__bloque__mail {
+    font-size: 18px;
+  }
+  .main__menu__imagenes {
+    margin: -20% 0px 30px 0px;
+  }
+  .footer___Desktop__menu {
+    background-color: #E8C5AD;
+  }
+}/*# sourceMappingURL=estilos.css.map */
