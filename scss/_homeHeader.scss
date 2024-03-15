@@ -6,7 +6,16 @@ header {
     display: flex;
     flex: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
+
+.header__home__parte2 {
+    display: flex;
+    align-items: center;
+    
+}
+
+
 
 .info__evelia {
     font-family: "Bodoni 72";
@@ -32,6 +41,10 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .header__home {
+        align-items: flex-start;
+    }
+
     .info__evelia {
         font-size: 20px;
     }
@@ -45,6 +58,10 @@ header {
 
     header {
         margin: 60px 122px;
+    }
+
+    .header__home {
+        align-items: center;
     }
 
     .header__home__descripcion {

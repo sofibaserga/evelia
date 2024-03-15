@@ -105,6 +105,12 @@ header {
   display: flex;
   flex: row;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__home__parte2 {
+  display: flex;
+  align-items: center;
 }
 
 .info__evelia {
@@ -128,6 +134,9 @@ header {
 
 /* ------ IPAD ------ */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header__home {
+    align-items: flex-start;
+  }
   .info__evelia {
     font-size: 20px;
   }
@@ -136,6 +145,9 @@ header {
 @media only screen and (min-width: 1025px) {
   header {
     margin: 60px 122px;
+  }
+  .header__home {
+    align-items: center;
   }
   .header__home__descripcion {
     display: flex;
@@ -290,7 +302,34 @@ footer a:hover {
     margin: 0px;
   }
 }
-.info__evelia__menu {
+.header__menu {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu__parte2 {
+  display: flex;
+  align-items: center;
+}
+
+.header__home__parte2__idioma {
+  display: flex;
+  font-family: "Futura PT Book";
+  margin-right: 12px;
+}
+
+.header__home__parte2__idioma p {
+  margin: 0px 8px;
+  font-size: 15px;
+}
+
+.header__home__parte2__idioma__activo {
+  font-family: "Futura PT Bold";
+}
+
+.info__evelia__menu__mobile {
   font-family: "Bodoni 72";
   font-size: 15px;
   margin-top: 12px;
@@ -300,13 +339,17 @@ footer a:hover {
   border-radius: 50px;
 }
 
-.info__evelia__menu p {
+.info__evelia__menu__desktop {
+  display: none;
+}
+
+.info__evelia__menu__mobile p {
   margin: 0px;
 }
 
 /* ------ IPAD ------ */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .info__evelia__menu {
+  .info__evelia__menu__mobile {
     font-size: 20px;
   }
 }
@@ -317,11 +360,21 @@ footer a:hover {
     flex-direction: row-reverse;
     align-items: center;
   }
-  .info__evelia__menu {
-    margin-top: 0px;
+  .info__evelia__menu__desktop {
+    font-family: "Bodoni 72";
+    text-transform: uppercase;
+    display: block;
+    flex-direction: column;
     margin-right: 10px;
     font-size: 17px;
     padding: 6px 18px;
+    color: #3C3734;
+  }
+  .info__evelia__menu__desktop p {
+    margin: 0px;
+  }
+  .info__evelia__menu__mobile {
+    display: none;
   }
 }
 .main__menu {
