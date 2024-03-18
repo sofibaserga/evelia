@@ -8,9 +8,7 @@
     margin-top: auto;
 }
 
-.imagen-abuela-mobile {
-    width: 80%;
-}
+
 
 
 /* ------ IPAD ------ */
@@ -28,6 +26,21 @@
 
     .main__menu__bloque__mail {
         font-size: 20px;
+    }
+
+}
+
+/* ------ AJUSTE LOGO ------ */
+
+@media only screen and (min-width: 1023px) and (max-width: 1280px) {
+
+    .cajaLogoGeneral {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoGeneral {
+        width: 80%;
     }
 
 }
