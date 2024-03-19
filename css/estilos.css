@@ -153,52 +153,6 @@ header {
     padding: 6px 18px;
   }
 }
-/* .main__home {
-    display: flex;
-    justify-content: center;
-}
-
-.logoGeneral {
-    margin-bottom: 15%;
-    margin-top: auto;
-}
-
-
-
-
-/* ------ IPAD ------ 
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .main__menu__bloque {
-        padding-bottom: 60px;
-    }
-
-    .main__menu__bloque__p {
-        font-size: 20px;
-        margin-right: 6px;
-    }
-
-    .main__menu__bloque__mail {
-        font-size: 20px;
-    }
-
-}
-
-/* ------ AJUSTE LOGO ------ 
-
-@media only screen and (min-width: 1023px) and (max-width: 1280px) {
-
-    .cajaLogoGeneral {
-        display: flex;
-        justify-content: center;
-    }
-
-    .logoGeneral {
-        width: 80%;
-    }
-
-} */
 footer {
   font-family: "Futura PT Book";
   font-size: 14px;
@@ -276,6 +230,9 @@ footer a:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 6px 140px;
+  }
+  footer {
+    background-color: #ECCDB7;
   }
 }
 .body__menu {
