@@ -55,7 +55,7 @@ a {
     border: none;
   }
 }
-.body__home {
+.content {
   background-image: url("../assets/img/home/img-home-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,23 +78,15 @@ a {
 }
 
 /* ------ IPAD ------ */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .body__home {
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+  .content {
     background-image: url("../assets/img/home/img-home-ipad.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-    background-color: #ECCDB7;
   }
 }
 /* ------ DESKTOP ------ */
-@media only screen and (min-width: 1025px) {
-  .body__home {
+@media only screen and (min-width: 851px) {
+  .content {
     background-image: url("../assets/img/home/img-home-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #ECCDB7;
-    margin: 0px;
   }
 }
 header {
@@ -161,39 +153,52 @@ header {
     padding: 6px 18px;
   }
 }
-.main__home {
-  display: flex;
-  justify-content: center;
+/* .main__home {
+    display: flex;
+    justify-content: center;
 }
 
 .logoGeneral {
-  margin-bottom: 15%;
-  margin-top: auto;
+    margin-bottom: 15%;
+    margin-top: auto;
 }
 
-/* ------ IPAD ------ */
+
+
+
+/* ------ IPAD ------ 
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .main__menu__bloque {
-    padding-bottom: 60px;
-  }
-  .main__menu__bloque__p {
-    font-size: 20px;
-    margin-right: 6px;
-  }
-  .main__menu__bloque__mail {
-    font-size: 20px;
-  }
+
+    .main__menu__bloque {
+        padding-bottom: 60px;
+    }
+
+    .main__menu__bloque__p {
+        font-size: 20px;
+        margin-right: 6px;
+    }
+
+    .main__menu__bloque__mail {
+        font-size: 20px;
+    }
+
 }
-/* ------ AJUSTE LOGO ------ */
+
+/* ------ AJUSTE LOGO ------ 
+
 @media only screen and (min-width: 1023px) and (max-width: 1280px) {
-  .cajaLogoGeneral {
-    display: flex;
-    justify-content: center;
-  }
-  .logoGeneral {
-    width: 80%;
-  }
-}
+
+    .cajaLogoGeneral {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoGeneral {
+        width: 80%;
+    }
+
+} */
 footer {
   font-family: "Futura PT Book";
   font-size: 14px;

@@ -1,4 +1,4 @@
-.body__home {
+.content {
     background-image: url("../assets/img/home/img-home-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,14 +24,10 @@
 
 /* ------ IPAD ------ */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 650px) and (max-width: 850px) {
 
-    .body__home {
+    .content {
         background-image: url("../assets/img/home/img-home-ipad.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0px;
-        background-color: #ECCDB7;
     }
 
 }
@@ -39,14 +35,10 @@
 
 /* ------ DESKTOP ------ */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 851px) {
 
-    .body__home {
+    .content {
         background-image: url("../assets/img/home/img-home-desktop.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #ECCDB7;
-        margin: 0px;
     }
 
 }
