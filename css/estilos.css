@@ -59,8 +59,7 @@ a {
   background-image: url("../assets/img/home/img-home-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+  background-position: center;
   background-color: #ECCDB7;
   margin: 0px;
   flex: 1;
@@ -73,8 +72,7 @@ a {
   background-image: url("../assets/img/home/img-home-mobile-ingles.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+  background-position: center;
   background-color: #ECCDB7;
   margin: 0px;
   flex: 1;
@@ -269,6 +267,7 @@ header {
   color: white;
   background-color: rgba(105, 154, 168, 0.8078431373);
   border-radius: 50px;
+  padding: 4px 6px;
 }
 
 .header__general__parte1__home p {
