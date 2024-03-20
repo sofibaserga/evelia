@@ -105,70 +105,6 @@ a {
     background-image: url("../assets/img/home/img-home-desktop-ingles.jpg");
   }
 }
-header {
-  margin: 40px 20px;
-}
-
-.header__home {
-  display: flex;
-  flex: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.header__home__parte2 {
-  display: flex;
-  align-items: center;
-}
-
-.info__evelia {
-  font-family: "Bodoni 72";
-  font-size: 15px;
-  margin-top: 12px;
-  color: #F7EDDC;
-  text-transform: uppercase;
-  background-color: rgba(105, 154, 168, 0.8078431373);
-  padding: 6px;
-  border-radius: 50px;
-}
-
-.info__evelia p {
-  margin: 0px;
-}
-
-.hover__menu:hover {
-  opacity: 0.9;
-}
-
-/* ------ IPAD ------ */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .header__home {
-    align-items: flex-start;
-  }
-  .info__evelia {
-    font-size: 20px;
-  }
-}
-/* ------ DESKTOP ------ */
-@media only screen and (min-width: 1025px) {
-  header {
-    margin: 60px 122px;
-  }
-  .header__home {
-    align-items: center;
-  }
-  .header__home__descripcion {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  .info__evelia {
-    margin-top: 0px;
-    margin-right: 10px;
-    font-size: 17px;
-    padding: 6px 18px;
-  }
-}
 footer {
   font-family: "Futura PT Book";
   font-size: 14px;
@@ -286,34 +222,23 @@ footer a:hover {
     margin: 0px;
   }
 }
-.header__menu {
+header {
+  margin: 40px 20px;
+}
+
+.header__general {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__general__bloque {
   display: flex;
   flex: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__menu__parte2 {
-  display: flex;
-  align-items: center;
-}
-
-.header__home__parte2__idioma {
-  display: flex;
-  font-family: "Futura PT Book";
-  margin-right: 12px;
-}
-
-.header__home__parte2__idioma p {
-  margin: 0px 8px;
-  font-size: 15px;
-}
-
-.header__home__parte2__idioma__activo {
-  font-family: "Futura PT Bold";
-}
-
-.info__evelia__menu__mobile {
+.header__general__parte1__mobile {
   font-family: "Bodoni 72";
   font-size: 15px;
   margin-top: 12px;
@@ -321,33 +246,81 @@ footer a:hover {
   text-transform: uppercase;
   padding: 6px;
   border-radius: 50px;
+  display: inline;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.info__evelia__menu__desktop {
+.header__general__parte1__mobile p {
+  margin: 0px 4px;
+}
+
+.header__general__parte1__mobile a {
+  margin: 0px 4px;
+}
+
+.header__general__parte1__desktop {
   display: none;
 }
 
-.info__evelia__menu__mobile p {
-  margin: 0px;
+.header__general__parte1__home {
+  color: white;
+  background-color: rgba(105, 154, 168, 0.8078431373);
+  border-radius: 50px;
+}
+
+.header__general__parte1__home p {
+  color: #F7EDDC;
+}
+
+.header__general__parte1__home a {
+  color: #F7EDDC;
+}
+
+.header__general__parte2 {
+  display: flex;
+  align-items: center;
+}
+
+.header__general__parte2__idioma {
+  display: flex;
+  font-family: "Futura PT Book";
+  margin-right: 20px;
+}
+
+.header__general__parte2__idioma p {
+  margin: 0px 8px;
+  font-size: 15px;
+}
+
+.header__general__parte2__idioma__activo {
+  font-family: "Futura PT Bold";
+}
+
+.hover__menu:hover {
+  opacity: 0.9;
 }
 
 /* ------ IPAD ------ */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .info__evelia__menu__mobile {
+  .header__general__parte1__mobile {
     font-size: 20px;
   }
-  .header__home__parte2 {
+  .header__general__parte2 {
     font-size: 18px;
   }
 }
 /* ------ DESKTOP ------ */
 @media only screen and (min-width: 1025px) {
-  .header__menu__descripcion {
+  header {
+    margin: 60px 122px;
+  }
+  .header__general__parte1 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
-  .info__evelia__menu__desktop {
+  .header__general__parte1__desktop {
     font-family: "Bodoni 72";
     text-transform: uppercase;
     display: block;
@@ -357,10 +330,10 @@ footer a:hover {
     padding: 6px 18px;
     color: #3C3734;
   }
-  .info__evelia__menu__desktop p {
+  .header__general__parte1__desktop p {
     margin: 0px;
   }
-  .info__evelia__menu__mobile {
+  .header__general__parte1__mobile {
     display: none;
   }
 }
