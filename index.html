@@ -35,7 +35,7 @@
             <header class="header__general">
                 <div class="header__general__bloque">
                     <div class="header__general__parte1">
-                        <a class="boton" href="https://meitre.com/es" target="_blank">Reservar</a>
+                        <a class="boton" href="https://evelia-restaurant.meitre.com/" target="_blank">Reservar</a>
                         <div class="header__general__parte1__desktop header__general__parte1__home">
                             <a href="https://www.google.com/maps/place/Evelia+Restaurante/@-34.5484044,-58.4610093,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb53eac7e45b1:0x312837b87098b8ee!8m2!3d-34.5484044!4d-58.4584344!16s%2Fg%2F11vrs1gk8n?entry=ttu"
                                 target="_blank">Campos Salles 1712 /
@@ -71,8 +71,8 @@
 
             </main>
         </div>
-        <footer>
 
+        <footer>
             <!-- Footer Mobile -->
             <div class="footer___Mobile">
                 <div class="footer__parte1">
@@ -117,6 +117,7 @@
         </footer>
     </div>
 
+    <!-- Menu -->
     <div class="body__menu">
         <div class="wrapper">
             <div class="content__menu">
@@ -124,7 +125,7 @@
                 <header class="header__general">
                     <div class="header__general__bloque">
                         <div class="header__general__parte1">
-                            <a class="boton" href="https://meitre.com/es" target="_blank">Reservar</a>
+                            <a class="boton" href="https://evelia-restaurant.meitre.com/" target="_blank">Reservar</a>
                             <div class="header__general__parte1__desktop">
                                 <a href="https://www.google.com/maps/place/Evelia+Restaurante/@-34.5484044,-58.4610093,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb53eac7e45b1:0x312837b87098b8ee!8m2!3d-34.5484044!4d-58.4584344!16s%2Fg%2F11vrs1gk8n?entry=ttu"
                                     target="_blank">Campos Salles 1712 /
@@ -137,7 +138,7 @@
                             <div class="header__general__parte2__idioma">
                                 <a class="header__general__parte2__idioma__activo" href="#">ES</a>
                                 <p>/</p>
-                                <a href="./menuIngles.html">EN</a>
+                                <a href="en/index.html">EN</a>
                             </div>
                             <a class="close__menu" href="#">
                                 <picture class="hover__menu">
@@ -158,16 +159,16 @@
     
                 <main class="main__menu">
                     <div class="main__menu__bloque">
-                        <a class="main__menu__bloque__p" href="#">Menú y Vinos</a>
+                        <a class="main__menu__bloque__p" href="https://www.monline.com.ar/Evelia" target="_blank">Menú y Vinos</a>
                         <picture>
                             <source media="(min-width: 1024px)" srcset="../assets/img/menu/flecha-desktop.svg">
                             <img src="../assets/img/menu/flecha-mobile.svg" alt="flecha">
                         </picture>
     
                     </div>
-                    <a href="mailto:carreras@eveliarestaurante.com" class="main__menu__bloque">
+                    <a href="mailto:eveliatrabajo@gmail.com" class="main__menu__bloque">
                         <p class="main__menu__bloque__p">Trabaja con nosotros</p>
-                        <p class="main__menu__bloque__mail">carreras@eveliarestaurante.com</p>
+                        <p class="main__menu__bloque__mail">eveliatrabajo@gmail.com</p>
                     </a>
                     <a href="mailto:info@eveliarestaurante.com" class="main__menu__bloque">
                         <p class="main__menu__bloque__p">Contacto</p>
@@ -240,6 +241,7 @@
     
             openMenuBtn.addEventListener("click", function() {
                 menuDiv.style.display = "block";
+                menuDiv.style.opacity = "1";
             });
     
             closeMenuBtn.addEventListener("click", function() {
@@ -247,7 +249,7 @@
                 setTimeout(function() {
                     menuDiv.style.display = "none";
                     menuDiv.style.opacity = "1";
-                }, 300); // Change 300 to the desired duration of the fade-out animation in milliseconds
+                }, 300);
             });
         });
     </script>
